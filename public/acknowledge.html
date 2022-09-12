@@ -1,0 +1,54 @@
+<!doctype HTML> 
+
+<HTML> 
+  
+<HEAD>
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo:normal">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600">
+  <link rel="stylesheet" type="text/css" href="acknowledge.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</HEAD>
+
+<body> 
+  <header>
+    <div class="title">
+      Video Preview
+    </div>
+    
+  </header>
+  <main class="container">
+    <div class="video">
+      <div id="tiktokDiv"></div>
+    </div>
+    <div id="subtitle"></div>
+
+    
+  </main>
+
+
+    
+  <footer class="footer">
+    <button id="reload"> 
+      <div id="icons">
+        <i class="fas fa-redo-alt"></i>
+      </</div> 
+    </button>
+    <div class="continue">
+      <button type="button" id="continueButton"> Continue </button>
+      <script type="text/javascript">
+        document.getElementById("continueButton").onclick = function () {
+          location.href='myvideos.html';
+        };
+      </script>
+    </div>
+    
+  </footer>
+
+</body>
+
+<script defer src="acknowledge.js" id="ourScript"></script>
+
+</html> 

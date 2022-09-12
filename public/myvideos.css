@@ -1,0 +1,223 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 75px;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 48px;
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  margin-right: 60px;
+  margin-top: 75px;
+  
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
+  padding-top: 50px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.dataElement {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+}
+
+.videoLine {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  border-color: rgba(0,0,0,0.3);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.01);
+  padding: 5px;
+  padding-left: 20px;
+  margin: 15px;  
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.videoLineEmpty {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  border-color: rgba(0,0,0,0.3);
+  border-style: dashed;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 15px;
+}
+
+.xButton {
+  display: flex;
+  width: auto;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 64px;
+  color: rgba(238, 29, 82, 0.9);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.activeButton {
+  background-color: rgba(238, 29, 82, 0.9);
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.activeButton:hover {
+  background-color: rgb(105, 201, 208);
+}
+
+.inactiveButton {
+  background-color: rgba(238, 29, 82, 0.2);
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+}
+
+
+@media (max-width: 900px) and (min-width: 701px) {
+  .container{
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  .dataElement {
+    width: 100%;
+  
+  }
+  .videoLine {
+    width: 100%;
+  }
+  .videoLineEmpty {
+    width: 100%;
+  }
+  .xButton {
+    font-size: 60px;
+    align-self: center;
+  }
+  
+}
+
+
+@media (max-width: 700px) {
+  .title {
+    justify-content: flex-start;
+    font-size: 32px;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .nav {
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+  .container {
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-top: 20px;
+  
+  }
+  .dataElement {
+    width: 100%;
+    
+    
+  }
+  .videoLine {
+    width: 100%;
+    font-size: 16px;
+    margin: 10px;
+  }
+  .videoLineEmpty {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .xButton {
+    align-self: center;
+    font-size: 44px;
+  }
+
+  .activeButton {
+    font-size: 16px;
+  }
+  .inactiveButton {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .footer {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,128 @@
+
+.gameHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.videoContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 35%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reload,.heart {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.unloved {
+  color: rgb(180,180,180);
+  transition-duration: 0.4s;
+}
+
+.loved {
+  color: rgba(238, 29, 82, 0.9);
+  transition-duration: 0.4s;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#icon1 {
+  display: inline;
+}
+#icon2 {
+  display: none;
+}
+#icon3 {
+  display: inline;
+}
+#icon4 {
+  display: none;
+}
+
+#subtitle1 {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  justify-content: center;
+  align-self: flex-end;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+#subtitle2 {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  justify-content: center;
+  align-self: flex-end;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+
+.tiktokDiv {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width:750px) {
+
+  main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  div.headerRight {
+      width: 30%;
+      justify-content: center;
+    }
+
+  footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  #subtitle1 {
+    font-size: 18px;
+  }
+  #subtitle2 {
+    font-size: 18px;
+  }
+  
+}
+

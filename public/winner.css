@@ -1,0 +1,55 @@
+.winnerHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+#subtitle {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  justify-content: center;
+  align-self: flex-end;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+
+#tiktokDiv {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+#reload {
+  padding-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+  div.headerRight {
+      width: 30%;
+      justify-content: center;
+    }
+  #subtitle {
+    font-size: 18px;
+  }
+}
+

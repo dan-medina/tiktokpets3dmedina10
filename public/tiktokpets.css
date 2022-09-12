@@ -1,0 +1,228 @@
+header {
+  display: flex;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 75px;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 48px;
+  
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  margin-right: 75px;
+  margin-top: 75px;
+  
+}
+#myvideosButton {
+  background-color: rgba(238, 29, 82, 0.9);
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#myvideosButton:hover {
+    background-color: rgb(105, 201, 208);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+}
+
+#continueButton {
+  background-color: rgba(238, 29, 82, 0.9);
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#continueButton:hover {
+  background-color: rgb(105, 201, 208);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.main_element {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 500px;
+  width: 500px;
+  margin-top: 150px;
+  margin-right: 25px;
+  margin-left: 25px;
+  gap: 40px;
+  background-image: linear-gradient(115deg, rgba(238, 29, 82, 0.9) 0 20%, rgb(105, 201, 208) 80% 100%);
+  border-radius: 25px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+input {
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border_width: 2px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+  outline-offset: 0;
+}
+input:focus {
+  border-color: rgb(105, 201, 208);
+  border-style: solid;
+  border-width: 2px;
+  outline-offset: 0;
+}
+
+.main_header {
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding-top: 60px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.main_user {
+  display: flex;
+  align-self: center;
+  color: white;
+  flex-direction: column;
+
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+}
+
+#username_input {
+  border-radius: 15px;
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main_url {
+  display: flex;
+  align-self: center;
+  color: white;
+  flex-direction: column;
+
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+}
+
+#url_input {
+  border-radius: 15px;
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main_nickname {
+  display: flex;
+  align-self: center;
+  color: white;
+  flex-direction: column;
+
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+}
+
+#nickname_input {
+  border-radius: 15px;
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) and (min-width: 701px) {
+  .title {
+    justify-content: flex-start;
+    margin-left: 180px;
+    width: auto;
+  }
+  .nav {
+    justify-content: flex-end;
+    margin-right: 180px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .title {
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 32px;
+    width: auto;
+  }
+  .nav {
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  .main_element {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .main_header {
+    font-size: 20px;
+  }
+  #continueButton {
+    font-size: 16px;
+  }
+  #myvideosButton {
+    font-size: 16px;
+  }
+  .footer {
+    padding-bottom: 50px;
+    padding-top: 25px;
+  }
+}
